@@ -104,8 +104,8 @@ $("#image-selector").change(function () {
 let model;
 (async function () {
 	
-	model = await tf.loadModel('model/model.json');
-	$("#selected-image").attr("src", "assets/ich.jpg");
+	model = await tf.loadModel('./model/model.json');
+	$("#selected-image").attr("src", "./assets/ich.jpg");
 	
 	
 	// Hide the model loading spinner
