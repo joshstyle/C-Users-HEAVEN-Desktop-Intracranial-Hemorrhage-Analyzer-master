@@ -104,8 +104,8 @@ $("#image-selector").change(function () {
 let model;
 (async function () {
 	
-	model = await tf.loadModel('http://brain.test.woza.work/model_3/model.json');
-	$("#selected-image").attr("src", "http://brain.test.woza.work/assets/ich.jpg");
+	model = await tf.loadModel('model/model.json');
+	$("#selected-image").attr("src", "assets/ich.jpg");
 	
 	
 	// Hide the model loading spinner
